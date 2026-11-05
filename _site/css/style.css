@@ -5,3 +5,8 @@ h1 {
 h2 {
     color:rgb(8, 170, 170);
 }
+
+img {
+    width: 90%;
+    height: auto;
+}
