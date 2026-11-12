@@ -34,7 +34,7 @@ permalink: gallery.html
 
   <template data-island>
     <script type="module">
-      import { createApp } from "{{ '/js/petite-vue.js' | url }}"
+      import { createApp } from "./js/petite-vue.js"
       createApp().mount('#gallery')
     </script>
   </template>
