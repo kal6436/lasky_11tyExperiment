@@ -7,7 +7,8 @@ eleventyConfig.addPassthroughCopy("./_src/css/"); // passing in css folder
 eleventyConfig.addPassthroughCopy("./_src/img/"); // passing in img folder
 eleventyConfig.addPassthroughCopy({
     "node_modules/@11ty/is-land/is-land.js": "js/is-land.js",
-    "node_modules/petite-vue/dist/petite-vue.es.js": "js/petite-vue.js"
+    "node_modules/petite-vue/dist/petite-vue.es.js": "js/petite-vue.js",
+    "_src/gallery.js": "js/gallery.js"
 })
 
 // Bundle three.js before every 11ty build

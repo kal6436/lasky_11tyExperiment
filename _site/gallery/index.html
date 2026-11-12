@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" 
+           content="width=device-width, 
+           user-scalable=no, 
+           initial-scale=1.0, 
+           maximum-scale=1.0, 
+           minimum-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" 
+           content="ie=edge">
+     <title>Kylie's First 11ty Project!</title>
+     <link rel="stylesheet" href="../css/style.css">
+     <script type="module" src="../js/is-land.js"></script>
+</head>
+<body>
+
+    <is-land on:visible import="../js/gallery.js" import-mount>
+  <div id="gallery" v-scope="{ active: 'all' }">
+    <div class="filters">
+      <button @click="active = 'all'" :class="{ on: active === 'all' }" :aria-pressed="active === 'all'">All</button>
+      <button @click="active = 'sketches'" :class="{ on: active === 'sketches' }" :aria-pressed="active === 'sketches'">Sketches</button>
+      <button @click="active = 'flatdrawing'" :class="{ on: active === 'flatdrawing' }" :aria-pressed="active === 'flatdrawing'">Flat Colored Drawings</button>
+      <button @click="active = 'finishdrawing'" :class="{ on: active === 'finishdrawing' }" :aria-pressed="active === 'finishdrawing'">Finished Drawings</button>
+    </div>
+    <section class="topic" v-show="active === 'all' || active === 'sketches'">
+      <h3>Sketches</h3>
+      <img src="../img/sketches/andilooChibiSketch_10.24.26.png" alt="Describe this image">
+      <img src="../img/sketches/ASqueakChibiSketch.png" alt="Describe this image">
+      <img src="../img/sketches/misfortuneChibiSketch_8.3.26.png" alt="Describe this image">
+    </section>
+    <section class="topic" v-show="active === 'all' || active === 'flatdrawing'">
+      <h3>Flat Colored Drawings</h3>
+      <img src="../img/flatdrawing/andilooChibiFlat_10.24.26.png" alt="Describe this image">
+      <img src="../img/flatdrawing/ASqueakChibiFlat.png" alt="Describe this image">
+      <img src="../img/flatdrawing/misfortuneChibiFlat_8.3.26.png" alt="Describe this image">
+    </section>
+    <section class="topic" v-show="active === 'all' || active === 'finishdrawing'">
+      <h3>Finished Drawings</h3>
+      <img src="../img/finishdrawing/andilooChibiFinish_10.24.26.png" alt="Describe this image">
+      <img src="../img/finishdrawing/ASqueakChibiFinish.png" alt="Describe this image">
+      <img src="../img/finishdrawing/misfortuneChibiFinish_8.3.26.png" alt="Describe this image">
+    </section>
+  </div>
+  <template data-island>
+    <script type="module">
+      import { createApp } from './js/petite-vue.js'
+      createApp().mount('#gallery')
+    </script>
+  </template>
+</is-land>
+    
+</body>
+</html>

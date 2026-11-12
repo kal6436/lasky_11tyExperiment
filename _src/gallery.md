@@ -1,0 +1,42 @@
+---
+title: Gallery
+layout: base.njk
+permalink: gallery.html
+---
+
+<is-land on:visible>
+  <div id="gallery" v-scope="{ active: 'all' }">
+    <div class="filters">
+      <button @click="active = 'all'" :class="{ on: active === 'all' }" :aria-pressed="active === 'all'">All</button>
+      <button @click="active = 'sketches'" :class="{ on: active === 'sketches' }" :aria-pressed="active === 'sketches'">Sketches</button>
+      <button @click="active = 'flatdrawing'" :class="{ on: active === 'flatdrawing' }" :aria-pressed="active === 'flatdrawing'">Flat Colored Drawings</button>
+      <button @click="active = 'finishdrawing'" :class="{ on: active === 'finishdrawing' }" :aria-pressed="active === 'finishdrawing'">Finished Drawings</button>
+    </div>
+    <section class="topic" v-show="active === 'all' || active === 'sketches'">
+      <h3>Sketches</h3>
+      <img src="img/sketches/andilooChibiSketch_10.24.26.png" alt="Two uncolored sketches one on the left of a sabertooth cat character standing with a basket, and on the right the character holding their tail curled into a ball shape">
+      <img src="img/sketches/ASqueakChibiSketch.png" alt="Uncolored sketch of a cute puppy character with their arms in the air">
+      <img src="img/sketches/misfortuneChibiSketch_8.3.26.png" alt="Two uncolored sketches of a gothic cat character the sketch on the left is them sitting and drawing on an ipad and on the right is them sitting, looking at the camera holding a switch">
+    </section>
+    <section class="topic" v-show="active === 'all' || active === 'flatdrawing'">
+      <h3>Flat Colored Drawings</h3>
+      <img src="img/flatdrawing/andilooChibiFlat_10.24.26.png" alt="A colored drawing of a sabertooth cat character holding their tail curled into a ball shape">
+      <img src="img/flatdrawing/ASqueakChibiFlat.png" alt="Colored drawing of a cute puppy character with their arms in the air">
+      <img src="img/flatdrawing/misfortuneChibiFlat_8.3.26.png" alt="Colored drawing of a gothic cat character sitting and drawing on an ipad">
+    </section>
+    <section class="topic" v-show="active === 'all' || active === 'finishdrawing'">
+      <h3>Finished Drawings</h3>
+      <img src="img/finishdrawing/andilooChibiFinish_10.24.26.png" alt="A cleanly colored drawing of a sabertooth cat character holding their tail curled into a ball shape">
+      <img src="img/finishdrawing/ASqueakChibiFinish.png" alt="Cleanly colored drawing of a cute puppy character with their arms in the air">
+      <img src="img/finishdrawing/misfortuneChibiFinish_8.3.26.png" alt="Cleanly colored drawing of a gothic cat character sitting and drawing on an ipad">
+    </section>
+  </div>
+
+  <template data-island>
+    <script type="module">
+      import { createApp } from '"/js/petite-vue.js"'
+      createApp().mount('#gallery')
+    </script>
+  </template>
+  
+</is-land>
