@@ -9,4 +9,3 @@ Write a few sentences here that introduce your issue to a beginner. **Markdown w
 in this part: *italics*, lists, and [links to resources](https://www.w3.org/WAI/fundamentals/accessibility-principles/).
 
 Each section should link to at least one resource and say why it's worth a reader's time.
-

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" 
+           content="width=device-width, 
+           user-scalable=no, 
+           initial-scale=1.0, 
+           maximum-scale=1.0, 
+           minimum-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" 
+           content="ie=edge">
+     <title>Kylie's First 11ty Project!</title>
+     <link rel="stylesheet" href="css/style.css">
+     <script type="module" src="js/is-land.js"></script>
+</head>
+<body>
+
+    <is-land on:visible>
+  <div id="counter" v-scope="{ count: 0 }">
+    <p>Count: <span v-text="count"></span></p>
+    <button @click="count++">Add one</button>
+  </div>
+  <template data-island>
+    <script type="module">
+      import { createApp } from './js/petite-vue.js'
+      createApp().mount('#counter')
+    </script>
+  </template>
+</is-land>
+    
+</body>
+</html>
