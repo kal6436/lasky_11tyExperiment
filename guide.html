@@ -11,10 +11,11 @@
      <meta http-equiv="X-UA-Compatible" 
            content="ie=edge">
      <title>Kylie's First 11ty Project!</title>
-     <link rel="stylesheet" href="css/style.css">
-     <script type="module" src="js/is-land.js"></script>
+     <link rel="stylesheet" href="/css/style.css">
+     <script type="module" src="/js/is-land.js"></script>
 </head>
 <body>
+    
 
     
 
@@ -127,6 +128,28 @@ HTML (not Markdown) between them. Delete the comment marks to use it:
   
 </main>
 
+
+    <strong>Page last updated:</strong>
+
+  <time class="fmt-date" datetime="2026-10-29T15:52:27-04:00">2026-10-29T15:52:27-04:00</time>
+
+&middot;
+<strong>Site last built:</strong>
+<time class="fmt-date" datetime="2026-11-18T02:35:00.191Z">2026-11-18T02:35:00.191Z</time>
+
+<is-land on:visible>
+  <template data-island>
+    <script type="module">
+      const fmt = new Intl.DateTimeFormat(undefined, {
+        dateStyle: "medium",
+        timeStyle: "short"
+      });
+      document.querySelectorAll("time.fmt-date").forEach((el) => {
+        el.textContent = fmt.format(new Date(el.getAttribute("datetime")));
+      });
+    </script>
+  </template>
+</is-land>
     
 </body>
 </html>

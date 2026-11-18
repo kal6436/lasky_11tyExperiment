@@ -11,12 +11,15 @@
      <meta http-equiv="X-UA-Compatible" 
            content="ie=edge">
      <title>Kylie's First 11ty Project!</title>
-     <link rel="stylesheet" href="css/style.css">
-     <script type="module" src="js/is-land.js"></script>
+     <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+     <script type="module" src="{{ '/js/is-land.js' | url }}"></script>
 </head>
 <body>
+    {% include "layouts/top.html" %}
 
     {{ content | safe }}
+
+    {% include  "layouts/footer.html" %}
     
 </body>
 </html>
