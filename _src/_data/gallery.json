@@ -1,0 +1,59 @@
+{
+  "finishdrawing": [
+    {
+      "file": "ASqueakChibiFinish.png",
+      "caption": "ASqueakChibiFinish",
+      "alt": "Cleanly colored drawing of a cute puppy character with their arms in the air"
+
+    },
+    {
+      "file": "andilooChibiFinish_10.24.26.png",
+      "caption": "andilooChibiFinish 10.24.26",
+      "alt": "A cleanly colored drawing of a sabertooth cat character holding their tail curled into a ball shape"
+    },
+    {
+      "file": "misfortuneChibiFinish_8.3.26.png",
+      "caption": "misfortuneChibiFinish 8.3.26",
+      "alt": "Cleanly colored drawing of a gothic cat character sitting and drawing on an ipad"
+    },
+    {
+      "file": "veillPaymentArt_6.28.26.png",
+      "caption": "veillPaymentArt 6.28.26",
+      "alt": "Portrait of a fox-like character"
+    }
+  ],
+  "flatdrawing": [
+    {
+      "file": "ASqueakChibiFlat.png",
+      "caption": "ASqueakChibiFlat",
+      "alt": "Colored drawing of a cute puppy character with their arms in the air"
+    },
+    {
+      "file": "andilooChibiFlat_10.24.26.png",
+      "caption": "andilooChibiFlat 10.24.26",
+      "alt": "A colored drawing of a sabertooth cat character holding their tail curled into a ball shape"
+    },
+    {
+      "file": "misfortuneChibiFlat_8.3.26.png",
+      "caption": "misfortuneChibiFlat 8.3.26",
+      "alt": "Colored drawing of a gothic cat character sitting and drawing on an ipad"
+    }
+  ],
+  "sketches": [
+    {
+      "file": "ASqueakChibiSketch.png",
+      "caption": "ASqueakChibiSketch",
+      "alt": "Uncolored sketch of a cute puppy character with their arms in the air"
+    },
+    {
+      "file": "andilooChibiSketch_10.24.26.png",
+      "caption": "andilooChibiSketch 10.24.26",
+      "alt": "Two uncolored sketches one on the left of a sabertooth cat character standing with a basket, and on the right the character holding their tail curled into a ball shape"
+    },
+    {
+      "file": "misfortuneChibiSketch_8.3.26.png",
+      "caption": "misfortuneChibiSketch 8.3.26",
+      "alt": "Two uncolored sketches of a gothic cat character the sketch on the left is them sitting and drawing on an ipad and on the right is them sitting, looking at the camera holding a switch"
+    }
+  ]
+}

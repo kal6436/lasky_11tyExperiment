@@ -31,3 +31,18 @@ img {
   max-width: 14rem;
   margin: 0.5rem;
 }
+
+.topic .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.topic figure {
+  flex: 0 1 14rem;
+  min-width: 0;
+  margin: 0;
+}
+.topic figure img {
+  width: 100%;
+  margin: 0;
+}

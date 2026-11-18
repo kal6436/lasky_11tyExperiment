@@ -11,10 +11,11 @@
      <meta http-equiv="X-UA-Compatible" 
            content="ie=edge">
      <title>Kylie's First 11ty Project!</title>
-     <link rel="stylesheet" href="/css/style.css">
-     <script type="module" src="/js/is-land.js"></script>
+     <link rel="stylesheet" href="css/style.css">
+     <script type="module" src="js/is-land.js"></script>
 </head>
 <body>
+    
 
     <is-land on:visible>
   <div id="counter" v-scope="{ count: 0 }">
@@ -25,6 +26,28 @@
     <script type="module">
       import { createApp } from './js/petite-vue.js'
       createApp().mount('#counter')
+    </script>
+  </template>
+</is-land>
+
+    <strong>Page last updated:</strong>
+
+  <time class="fmt-date" datetime="2026-11-12T11:14:32-05:00">2026-11-12T11:14:32-05:00</time>
+
+&middot;
+<strong>Site last built:</strong>
+<time class="fmt-date" datetime="2026-11-18T02:53:20.215Z">2026-11-18T02:53:20.215Z</time>
+
+<is-land on:visible>
+  <template data-island>
+    <script type="module">
+      const fmt = new Intl.DateTimeFormat(undefined, {
+        dateStyle: "medium",
+        timeStyle: "short"
+      });
+      document.querySelectorAll("time.fmt-date").forEach((el) => {
+        el.textContent = fmt.format(new Date(el.getAttribute("datetime")));
+      });
     </script>
   </template>
 </is-land>
